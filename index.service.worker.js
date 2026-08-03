@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1785793200|2661635692';
+const CACHE_VERSION = '1785800230|26611112';
 /** @type {string} */
 const CACHE_PREFIX = 'Open Table MVP v-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
