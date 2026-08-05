@@ -4,9 +4,9 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1785817080|16448073';
+const CACHE_VERSION = '1785933837|17017922';
 /** @type {string} */
-const CACHE_PREFIX = 'Open Table MVP v-sw-cache-';
+const CACHE_PREFIX = 'OpenTable-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 /** @type {string} */
 const OFFLINE_URL = 'index.offline.html';
