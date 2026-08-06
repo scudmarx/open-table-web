@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1785993606|13811798';
+const CACHE_VERSION = '1786048457|13313809';
 /** @type {string} */
 const CACHE_PREFIX = 'OpenTable-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
