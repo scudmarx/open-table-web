@@ -1,0 +1,44 @@
+{
+  "format": "open-table-package",
+  "format_version": 1,
+  "id": "uk.scudmarx.tau40k",
+  "name": "T'au — For the Greater Good",
+  "version": "1.0.2",
+  "package_type": "content",
+  "api": {
+    "open_table": ">=1.0,<2.0",
+    "state_schema": 1
+  },
+  "entrypoints": {
+    "collections": "collections.json",
+    "record_package": "set.json"
+  },
+  "dependencies": [
+    {
+      "id": "org.opentable.magic",
+      "version": ">=0.28.0,<1.0",
+      "optional": false,
+      "reason": "Uses Magic deck schema v3 and custom Magic card records v2."
+    }
+  ],
+  "content": {
+    "include": [
+      "package.json",
+      "set.json",
+      "collections.json",
+      "decklists/**",
+      "cards/**",
+      "schemas/**",
+      "README.md"
+    ]
+  },
+  "description": "T'au custom Magic card records and 100-card Commander deck, bundled as a discoverable OpenTable content package.",
+  "exports": {
+    "catalogues": [
+      "TAU"
+    ],
+    "objects": [
+      "tau40k_aunva"
+    ]
+  }
+}

@@ -1,0 +1,1391 @@
+{
+  "format": "open-table-game",
+  "format_version": 1,
+  "id": "magic",
+  "name": "Magic: The Gathering",
+  "default_card_back": "assets/default_card_back.png",
+  "object_libraries": [
+    "objects/cards.json"
+  ],
+  "actions": {
+    "take_card": {
+      "label": "Take card",
+      "handler": "take_card",
+      "requires": [
+        "has_cards"
+      ]
+    },
+    "draw_private": {
+      "label": "Draw private",
+      "handler": "draw_private",
+      "requires": [
+        "has_cards"
+      ]
+    },
+    "toggle_spread": {
+      "label": "Spread",
+      "alternate_label": "Collapse",
+      "handler": "toggle_spread",
+      "requires": [
+        "spreadable"
+      ],
+      "full_label": "Fully spread"
+    },
+    "flip": {
+      "label": "Flip",
+      "handler": "flip",
+      "requires": [
+        "has_cards",
+        "card_like"
+      ]
+    },
+    "toggle_tapped": {
+      "label": "Tap",
+      "alternate_label": "Untap",
+      "handler": "toggle_tapped",
+      "requires": [
+        "has_cards",
+        "card_like"
+      ]
+    },
+    "rotate_clockwise": {
+      "label": "Rotate 90°",
+      "handler": "rotate_clockwise",
+      "requires": [
+        "has_cards",
+        "card_like"
+      ]
+    },
+    "shuffle": {
+      "label": "Shuffle",
+      "handler": "shuffle",
+      "requires": [
+        "multiple_cards"
+      ]
+    },
+    "take_top": {
+      "label": "Take top card",
+      "handler": "take_top",
+      "requires": [
+        "has_cards"
+      ]
+    },
+    "rename_stack": {
+      "label": "Rename stack…",
+      "handler": "rename"
+    },
+    "delete_object": {
+      "label": "Delete",
+      "handler": "delete"
+    },
+    "card_counter_plus": {
+      "label": "+1 on card",
+      "handler": "card_counter_plus",
+      "requires": [
+        "has_cards",
+        "card_like"
+      ]
+    },
+    "card_counter_minus": {
+      "label": "−1 on card",
+      "handler": "card_counter_minus",
+      "requires": [
+        "has_cards",
+        "card_like"
+      ]
+    }
+  },
+  "object_types": {
+    "card": {
+      "actions": [
+        "flip",
+        "toggle_tapped",
+        "rotate_clockwise",
+        "card_counter_plus",
+        "card_counter_minus",
+        "delete_object"
+      ],
+      "schema": "card",
+      "collection_actions": [
+        "take_card",
+        "toggle_spread",
+        "flip",
+        "toggle_tapped",
+        "rotate_clockwise",
+        "shuffle",
+        "card_counter_plus",
+        "card_counter_minus",
+        "rename_stack",
+        "generic_collection_summary",
+        "delete_object"
+      ]
+    },
+    "token": {
+      "actions": [
+        "flip",
+        "toggle_tapped",
+        "rotate_clockwise",
+        "card_counter_plus",
+        "card_counter_minus",
+        "delete_object"
+      ],
+      "schema": "token",
+      "collection_actions": [
+        "take_card",
+        "toggle_spread",
+        "flip",
+        "toggle_tapped",
+        "rotate_clockwise",
+        "shuffle",
+        "card_counter_plus",
+        "card_counter_minus",
+        "rename_stack",
+        "generic_collection_summary",
+        "delete_object"
+      ]
+    }
+  },
+  "stack_profiles": {
+    "library": {
+      "actions": [
+        "draw_private",
+        "shuffle",
+        "toggle_spread",
+        "take_top",
+        "rename_stack",
+        "generic_collection_summary",
+        "delete_object"
+      ]
+    },
+    "hand": {
+      "actions": [
+        "take_card",
+        "toggle_spread",
+        "flip",
+        "toggle_tapped",
+        "rotate_clockwise",
+        "card_counter_plus",
+        "card_counter_minus",
+        "rename_stack",
+        "generic_collection_summary",
+        "delete_object"
+      ]
+    },
+    "graveyard": {
+      "actions": [
+        "take_card",
+        "toggle_spread",
+        "flip",
+        "toggle_tapped",
+        "rotate_clockwise",
+        "shuffle",
+        "card_counter_plus",
+        "card_counter_minus",
+        "rename_stack",
+        "generic_collection_summary",
+        "delete_object"
+      ]
+    }
+  },
+  "default_setup": "setups/default_table.json",
+  "setups": [
+    {
+      "name": "Standard table",
+      "path": "setups/default_table.json",
+      "id": "default_table"
+    }
+  ],
+  "chat_bubbles": [
+    "Pass",
+    "In response…",
+    "Thinking…",
+    "Good game"
+  ],
+  "play_area": {
+    "table_size": [
+      2800,
+      1800
+    ],
+    "default_player_count": 1,
+    "supported_player_counts": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "layouts": {
+      "1": {
+        "shared_zones": [
+          {
+            "id": "public",
+            "label": "Public Table",
+            "mode": "public",
+            "face_up": true,
+            "double_tap": "toggle_tapped",
+            "rect": [
+              0.015,
+              0.02,
+              0.97,
+              0.72
+            ],
+            "face_policy": "preserve"
+          }
+        ],
+        "players": [
+          {
+            "edge": "bottom",
+            "rotation": 0,
+            "anchors": {
+              "life": [
+                0.09,
+                0.62
+              ],
+              "graveyard": [
+                0.86,
+                0.62
+              ],
+              "play": [
+                0.5,
+                0.47
+              ]
+            },
+            "zones": [
+              {
+                "key": "private",
+                "label": "{player} — Private",
+                "mode": "private",
+                "face_up": true,
+                "double_tap": "move_to_public",
+                "rect": [
+                  0.015,
+                  0.76,
+                  0.68,
+                  0.22
+                ]
+              },
+              {
+                "key": "hidden",
+                "label": "{player} — Hidden",
+                "mode": "hidden",
+                "face_up": false,
+                "double_tap": "draw_to_private",
+                "rect": [
+                  0.71,
+                  0.76,
+                  0.275,
+                  0.22
+                ]
+              }
+            ]
+          }
+        ],
+        "table_size": [
+          2800,
+          1800
+        ]
+      },
+      "2": {
+        "shared_zones": [
+          {
+            "id": "public",
+            "label": "Public Table",
+            "mode": "public",
+            "face_up": true,
+            "double_tap": "toggle_tapped",
+            "rect": [
+              0.015,
+              0.235,
+              0.97,
+              0.53
+            ],
+            "face_policy": "preserve"
+          }
+        ],
+        "players": [
+          {
+            "edge": "bottom",
+            "rotation": 0,
+            "anchors": {
+              "life": [
+                0.08,
+                0.67
+              ],
+              "graveyard": [
+                0.86,
+                0.67
+              ],
+              "play": [
+                0.4,
+                0.62
+              ]
+            },
+            "zones": [
+              {
+                "key": "private",
+                "label": "{player} — Private",
+                "mode": "private",
+                "face_up": true,
+                "double_tap": "move_to_public",
+                "rect": [
+                  0.015,
+                  0.785,
+                  0.68,
+                  0.195
+                ]
+              },
+              {
+                "key": "hidden",
+                "label": "{player} — Hidden",
+                "mode": "hidden",
+                "face_up": false,
+                "double_tap": "draw_to_private",
+                "rect": [
+                  0.71,
+                  0.785,
+                  0.275,
+                  0.195
+                ]
+              }
+            ]
+          },
+          {
+            "edge": "top",
+            "rotation": 180,
+            "anchors": {
+              "life": [
+                0.92,
+                0.33
+              ],
+              "graveyard": [
+                0.14,
+                0.33
+              ],
+              "play": [
+                0.6,
+                0.38
+              ]
+            },
+            "zones": [
+              {
+                "key": "private",
+                "label": "{player} — Private",
+                "mode": "private",
+                "face_up": true,
+                "double_tap": "move_to_public",
+                "rect": [
+                  0.305,
+                  0.02,
+                  0.68,
+                  0.195
+                ]
+              },
+              {
+                "key": "hidden",
+                "label": "{player} — Hidden",
+                "mode": "hidden",
+                "face_up": false,
+                "double_tap": "draw_to_private",
+                "rect": [
+                  0.015,
+                  0.02,
+                  0.275,
+                  0.195
+                ]
+              }
+            ]
+          }
+        ],
+        "table_size": [
+          3100,
+          1950
+        ]
+      },
+      "3": {
+        "shared_zones": [
+          {
+            "id": "public",
+            "label": "Public Table",
+            "mode": "public",
+            "face_up": true,
+            "double_tap": "toggle_tapped",
+            "rect": [
+              0.015,
+              0.235,
+              0.97,
+              0.53
+            ],
+            "face_policy": "preserve"
+          }
+        ],
+        "players": [
+          {
+            "edge": "bottom",
+            "rotation": 0,
+            "anchors": {
+              "life": [
+                0.08,
+                0.67
+              ],
+              "graveyard": [
+                0.86,
+                0.67
+              ],
+              "play": [
+                0.5,
+                0.62
+              ]
+            },
+            "zones": [
+              {
+                "key": "private",
+                "label": "{player} — Private",
+                "mode": "private",
+                "face_up": true,
+                "double_tap": "move_to_public",
+                "rect": [
+                  0.015,
+                  0.785,
+                  0.68,
+                  0.195
+                ]
+              },
+              {
+                "key": "hidden",
+                "label": "{player} — Hidden",
+                "mode": "hidden",
+                "face_up": false,
+                "double_tap": "draw_to_private",
+                "rect": [
+                  0.71,
+                  0.785,
+                  0.275,
+                  0.195
+                ]
+              }
+            ]
+          },
+          {
+            "edge": "top",
+            "rotation": 180,
+            "anchors": {
+              "life": [
+                0.05,
+                0.33
+              ],
+              "graveyard": [
+                0.42,
+                0.33
+              ],
+              "play": [
+                0.27,
+                0.38
+              ]
+            },
+            "zones": [
+              {
+                "key": "private",
+                "label": "{player} — Private",
+                "mode": "private",
+                "face_up": true,
+                "double_tap": "move_to_public",
+                "rect": [
+                  0.015,
+                  0.02,
+                  0.34,
+                  0.195
+                ]
+              },
+              {
+                "key": "hidden",
+                "label": "{player} — Hidden",
+                "mode": "hidden",
+                "face_up": false,
+                "double_tap": "draw_to_private",
+                "rect": [
+                  0.365,
+                  0.02,
+                  0.125,
+                  0.195
+                ]
+              }
+            ]
+          },
+          {
+            "edge": "top",
+            "rotation": 180,
+            "anchors": {
+              "life": [
+                0.95,
+                0.33
+              ],
+              "graveyard": [
+                0.58,
+                0.33
+              ],
+              "play": [
+                0.73,
+                0.38
+              ]
+            },
+            "zones": [
+              {
+                "key": "private",
+                "label": "{player} — Private",
+                "mode": "private",
+                "face_up": true,
+                "double_tap": "move_to_public",
+                "rect": [
+                  0.645,
+                  0.02,
+                  0.34,
+                  0.195
+                ]
+              },
+              {
+                "key": "hidden",
+                "label": "{player} — Hidden",
+                "mode": "hidden",
+                "face_up": false,
+                "double_tap": "draw_to_private",
+                "rect": [
+                  0.51,
+                  0.02,
+                  0.125,
+                  0.195
+                ]
+              }
+            ]
+          }
+        ],
+        "table_size": [
+          3800,
+          2200
+        ]
+      },
+      "4": {
+        "shared_zones": [
+          {
+            "id": "public",
+            "label": "Public Table",
+            "mode": "public",
+            "face_up": true,
+            "double_tap": "toggle_tapped",
+            "rect": [
+              0.015,
+              0.235,
+              0.97,
+              0.53
+            ],
+            "face_policy": "preserve"
+          }
+        ],
+        "players": [
+          {
+            "edge": "bottom",
+            "rotation": 0,
+            "anchors": {
+              "life": [
+                0.05,
+                0.67
+              ],
+              "graveyard": [
+                0.42,
+                0.67
+              ],
+              "play": [
+                0.27,
+                0.62
+              ]
+            },
+            "zones": [
+              {
+                "key": "private",
+                "label": "{player} — Private",
+                "mode": "private",
+                "face_up": true,
+                "double_tap": "move_to_public",
+                "rect": [
+                  0.015,
+                  0.785,
+                  0.34,
+                  0.195
+                ]
+              },
+              {
+                "key": "hidden",
+                "label": "{player} — Hidden",
+                "mode": "hidden",
+                "face_up": false,
+                "double_tap": "draw_to_private",
+                "rect": [
+                  0.365,
+                  0.785,
+                  0.125,
+                  0.195
+                ]
+              }
+            ]
+          },
+          {
+            "edge": "bottom",
+            "rotation": 0,
+            "anchors": {
+              "life": [
+                0.95,
+                0.67
+              ],
+              "graveyard": [
+                0.58,
+                0.67
+              ],
+              "play": [
+                0.73,
+                0.62
+              ]
+            },
+            "zones": [
+              {
+                "key": "private",
+                "label": "{player} — Private",
+                "mode": "private",
+                "face_up": true,
+                "double_tap": "move_to_public",
+                "rect": [
+                  0.645,
+                  0.785,
+                  0.34,
+                  0.195
+                ]
+              },
+              {
+                "key": "hidden",
+                "label": "{player} — Hidden",
+                "mode": "hidden",
+                "face_up": false,
+                "double_tap": "draw_to_private",
+                "rect": [
+                  0.51,
+                  0.785,
+                  0.125,
+                  0.195
+                ]
+              }
+            ]
+          },
+          {
+            "edge": "top",
+            "rotation": 180,
+            "anchors": {
+              "life": [
+                0.05,
+                0.33
+              ],
+              "graveyard": [
+                0.42,
+                0.33
+              ],
+              "play": [
+                0.27,
+                0.38
+              ]
+            },
+            "zones": [
+              {
+                "key": "private",
+                "label": "{player} — Private",
+                "mode": "private",
+                "face_up": true,
+                "double_tap": "move_to_public",
+                "rect": [
+                  0.015,
+                  0.02,
+                  0.34,
+                  0.195
+                ]
+              },
+              {
+                "key": "hidden",
+                "label": "{player} — Hidden",
+                "mode": "hidden",
+                "face_up": false,
+                "double_tap": "draw_to_private",
+                "rect": [
+                  0.365,
+                  0.02,
+                  0.125,
+                  0.195
+                ]
+              }
+            ]
+          },
+          {
+            "edge": "top",
+            "rotation": 180,
+            "anchors": {
+              "life": [
+                0.95,
+                0.33
+              ],
+              "graveyard": [
+                0.58,
+                0.33
+              ],
+              "play": [
+                0.73,
+                0.38
+              ]
+            },
+            "zones": [
+              {
+                "key": "private",
+                "label": "{player} — Private",
+                "mode": "private",
+                "face_up": true,
+                "double_tap": "move_to_public",
+                "rect": [
+                  0.645,
+                  0.02,
+                  0.34,
+                  0.195
+                ]
+              },
+              {
+                "key": "hidden",
+                "label": "{player} — Hidden",
+                "mode": "hidden",
+                "face_up": false,
+                "double_tap": "draw_to_private",
+                "rect": [
+                  0.51,
+                  0.02,
+                  0.125,
+                  0.195
+                ]
+              }
+            ]
+          }
+        ],
+        "table_size": [
+          4200,
+          2400
+        ]
+      }
+    }
+  },
+  "creation_catalog": {
+    "categories": [
+      {
+        "id": "cards",
+        "label": "Cards",
+        "description": "Create an individual card from any installed Magic card package.",
+        "catalog_kind": "records",
+        "entries": [],
+        "catalogue_id": "card_sets",
+        "exclude_filter": {
+          "is_token": true
+        },
+        "searchable": true,
+        "search_placeholder": "Search cards by name, mana cost, type, rules text or set…",
+        "empty_text": "No non-token Magic cards are installed.",
+        "record_display": {
+          "search_fields": [
+            "name",
+            "mana_cost",
+            "type_line",
+            "oracle_text",
+            "power",
+            "toughness",
+            "set_code",
+            "collector_number",
+            "record_id"
+          ],
+          "lines": [
+            {
+              "template": "{mana_cost} • {type_line}",
+              "required": [
+                "type_line"
+              ]
+            },
+            {
+              "template": "{power}/{toughness}",
+              "required": [
+                "power",
+                "toughness"
+              ]
+            },
+            {
+              "template": "{oracle_text}",
+              "required": [
+                "oracle_text"
+              ],
+              "max_length": 120
+            },
+            {
+              "template": "{set_code} #{collector_number}",
+              "required": [
+                "set_code",
+                "collector_number"
+              ]
+            }
+          ]
+        },
+        "include_object_libraries": true
+      },
+      {
+        "id": "tokens",
+        "label": "Tokens",
+        "description": "Create token cards supplied by installed Magic set packages.",
+        "catalog_kind": "records",
+        "entries": [
+          {
+            "id": "custom_token",
+            "label": "Create custom token…",
+            "description": "Create a token card with user-entered Magic characteristics.",
+            "kind": "token",
+            "object": {
+              "object_type": "token",
+              "name": "Token",
+              "mana_cost": "",
+              "type_line": "Token Creature",
+              "oracle_text": "",
+              "power": "1",
+              "toughness": "1",
+              "color": "C",
+              "art_label": "TOKEN",
+              "is_token": true,
+              "mana_value": 0
+            },
+            "creation_form": {
+              "title": "Create Magic token",
+              "description": "Enter the token's printed characteristics. These describe the physical object; Open Table does not enforce game rules.",
+              "confirm_label": "Create token",
+              "fields": [
+                {
+                  "id": "name",
+                  "label": "Name",
+                  "type": "string",
+                  "default": "Token",
+                  "required": true,
+                  "target": "object.name"
+                },
+                {
+                  "id": "type",
+                  "label": "Type line",
+                  "type": "string",
+                  "default": "Token Creature",
+                  "required": true,
+                  "target": "object.type_line"
+                },
+                {
+                  "id": "power",
+                  "label": "Power",
+                  "type": "string",
+                  "default": "1",
+                  "target": "object.power"
+                },
+                {
+                  "id": "toughness",
+                  "label": "Toughness",
+                  "type": "string",
+                  "default": "1",
+                  "target": "object.toughness"
+                },
+                {
+                  "id": "rules",
+                  "label": "Rules text",
+                  "type": "multiline",
+                  "default": "",
+                  "height": 130,
+                  "target": "object.oracle_text"
+                }
+              ],
+              "allow_presets": true,
+              "save_preset_default": true,
+              "preset_label_template": "{name}",
+              "preset_description_template": "{type} — {power}/{toughness} — {rules}"
+            },
+            "actions": [
+              "flip",
+              "toggle_tapped",
+              "rotate_clockwise",
+              "card_counter_plus",
+              "card_counter_minus",
+              "delete_object"
+            ]
+          }
+        ],
+        "catalogue_id": "card_sets",
+        "filter": {
+          "is_token": true
+        },
+        "searchable": true,
+        "search_placeholder": "Search tokens by name, type, text, power, toughness or set…",
+        "record_display": {
+          "search_fields": [
+            "name",
+            "mana_cost",
+            "type_line",
+            "oracle_text",
+            "power",
+            "toughness",
+            "set_code",
+            "collector_number",
+            "record_id"
+          ],
+          "lines": [
+            {
+              "template": "{type_line}",
+              "required": [
+                "type_line"
+              ]
+            },
+            {
+              "template": "{power}/{toughness}",
+              "required": [
+                "power",
+                "toughness"
+              ]
+            },
+            {
+              "template": "{oracle_text}",
+              "required": [
+                "oracle_text"
+              ],
+              "max_length": 100
+            },
+            {
+              "template": "{set_code} #{collector_number}",
+              "required": [
+                "set_code",
+                "collector_number"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "decks",
+        "label": "Decks",
+        "description": "Create a deck in the chosen zone. Hidden and private zones use their game-defined collection slot; otherwise the cards form a loose stack.",
+        "catalog_kind": "collections",
+        "entries": [],
+        "empty_text": "No decks are stored. Use the Magic menu in the top-right to import or manage decks.",
+        "catalogue_id": "decks"
+      }
+    ]
+  },
+  "package_menu": [
+    {
+      "label": "Content",
+      "items": [
+        {
+          "id": "manage_decks",
+          "label": "Deck catalogue…",
+          "command": "open_catalogue",
+          "catalogue_id": "decks"
+        },
+        {
+          "id": "import_deck",
+          "label": "Import decklist…",
+          "command": "import_catalogue",
+          "catalogue_id": "decks"
+        },
+        {
+          "id": "manage_sets",
+          "label": "Card set catalogue…",
+          "command": "open_catalogue",
+          "catalogue_id": "card_sets"
+        },
+        {
+          "id": "install_set",
+          "label": "Install card set package…",
+          "command": "install_package",
+          "catalogue_id": "card_sets"
+        },
+        {
+          "id": "restore_decks",
+          "label": "Restore bundled decks",
+          "command": "restore_catalogue",
+          "catalogue_id": "decks"
+        }
+      ]
+    },
+    {
+      "label": "Configuration",
+      "items": [
+        {
+          "id": "settings",
+          "label": "Magic settings…",
+          "command": "open_settings"
+        }
+      ]
+    },
+    {
+      "label": "Information",
+      "items": [
+        {
+          "id": "package_report",
+          "label": "Package report…",
+          "command": "package_report"
+        }
+      ]
+    }
+  ],
+  "catalogues": {
+    "decks": {
+      "adapter": "collection_files",
+      "label": "Deck catalogue",
+      "directory": "decks",
+      "seed_directory": "decklists",
+      "id_field": "id",
+      "deletion_record": "deleted_decks.json",
+      "creation_category": "decks",
+      "allow_import": true,
+      "allow_restore": true,
+      "import_label": "Import decklist…",
+      "restore_label": "Restore bundled decks",
+      "import_title": "Import Magic decklist",
+      "import_filters": [
+        "*.txt,*.json,*.dek,*.cod ; Magic decklists",
+        "*.* ; All files"
+      ],
+      "empty_text": "No decks are currently stored in the Magic catalogue.",
+      "restored_message": "Restored bundled Magic decks",
+      "plain_text": {
+        "ignored_sections": [
+          "deck",
+          "mainboard",
+          "sideboard",
+          "commander",
+          "companion"
+        ],
+        "reference_pattern": "^(.+?)\\s+[\\(\\[]([A-Za-z0-9]{2,8})[\\)\\]](?:\\s+([A-Za-z0-9★*]+))?$",
+        "name_group": 1,
+        "package_group": 2,
+        "number_group": 3,
+        "name_field": "name",
+        "package_field": "set_code",
+        "number_field": "collector_number",
+        "section_aliases": {
+          "deck": "mainboard",
+          "mainboard": "mainboard",
+          "main deck": "mainboard",
+          "commander": "commanders",
+          "commanders": "commanders",
+          "command zone": "commanders",
+          "sideboard": "sideboard",
+          "side board": "sideboard",
+          "companion": "companions",
+          "companions": "companions",
+          "maybeboard": "maybeboard",
+          "considering": "maybeboard"
+        },
+        "default_section": "mainboard",
+        "foil_markers": [
+          "*F*",
+          "[F]",
+          "FOIL"
+        ],
+        "etched_markers": [
+          "*E*",
+          "[E]",
+          "ETCHED"
+        ]
+      },
+      "schema": {
+        "id_field": "id",
+        "name_field": "name",
+        "description_field": "description",
+        "items_field": "cards",
+        "stack_field": "stack",
+        "featured_item_field": "commander",
+        "quantity_field": "quantity",
+        "record_reference_field": "record_id",
+        "featured_label": "Commander",
+        "featured_stack_key": "commander",
+        "featured_anchor": "play",
+        "featured_face_up": true,
+        "sections_field": "sections",
+        "primary_section": "mainboard",
+        "featured_section": "commanders",
+        "secondary_sections": [
+          "sideboard",
+          "companions",
+          "maybeboard"
+        ]
+      },
+      "default_stack_profile": "library",
+      "package_entrypoint": "collections",
+      "deprecated_seed_ids": [
+        "tau_for_the_greater_good"
+      ],
+      "record_format": "open-table-mtg-deck",
+      "record_format_version": 3
+    },
+    "card_sets": {
+      "adapter": "record_packages",
+      "label": "Card set catalogue",
+      "directory": "sets",
+      "allow_install": true,
+      "install_label": "Install set package…",
+      "install_title": "Install Magic card set package",
+      "install_filters": [
+        "*.zip ; Open Table card set package",
+        "set.json ; Unpacked card set manifest",
+        "*.* ; All files"
+      ],
+      "manifest_file": "set.json",
+      "manifest_code_field": "code",
+      "manifest_name_field": "name",
+      "records_file_field": "cards_file",
+      "default_records_file": "cards.json",
+      "records_key": "cards",
+      "record_id_field": "record_id",
+      "record_name_field": "name",
+      "record_number_field": "collector_number",
+      "record_package_field": "set_code",
+      "default_object_type": "card",
+      "token_field": "is_token",
+      "image_fields": [
+        "front_image",
+        "back_image"
+      ],
+      "empty_text": "No Magic card sets are installed.",
+      "invalid_package_message": "That file was not a valid Open Table Magic set package",
+      "installed_message": "Installed Magic set",
+      "package_entrypoint": "record_package",
+      "record_identifiers_field": "identifiers",
+      "identifier_priority": [
+        "scryfall_id",
+        "mtgjson_uuid",
+        "mtgjson_v4_id",
+        "mtgo_id",
+        "arena_id",
+        "multiverse_id",
+        "scryfall_oracle_id"
+      ]
+    }
+  },
+  "object_schemas": {
+    "card": {
+      "renderer": "card",
+      "fields": {
+        "name": {
+          "type": "string",
+          "default": "Card",
+          "required": true
+        },
+        "mana_cost": {
+          "type": "string",
+          "default": ""
+        },
+        "type_line": {
+          "type": "string",
+          "default": "Card"
+        },
+        "oracle_text": {
+          "type": "string",
+          "default": ""
+        },
+        "power": {
+          "type": "string",
+          "default": ""
+        },
+        "toughness": {
+          "type": "string",
+          "default": ""
+        },
+        "color": {
+          "type": "string",
+          "default": "C"
+        },
+        "art_label": {
+          "type": "string",
+          "default": ""
+        },
+        "front_image": {
+          "type": "string",
+          "default": ""
+        },
+        "back_image": {
+          "type": "string",
+          "default": ""
+        },
+        "set_code": {
+          "type": "string",
+          "default": ""
+        },
+        "collector_number": {
+          "type": "string",
+          "default": ""
+        },
+        "is_token": {
+          "type": "bool",
+          "default": false
+        },
+        "mana_value": {
+          "type": "number",
+          "default": 0
+        },
+        "record_id": {
+          "type": "string",
+          "default": ""
+        },
+        "identifiers": {
+          "type": "dictionary",
+          "default": {}
+        },
+        "language": {
+          "type": "string",
+          "default": "en"
+        },
+        "finishes": {
+          "type": "array",
+          "default": [
+            "nonfoil"
+          ]
+        },
+        "finish": {
+          "type": "string",
+          "default": "nonfoil"
+        }
+      },
+      "render": {
+        "title": "name",
+        "corner": "mana_cost",
+        "corner_transform": "strip_braces",
+        "subtitle": "type_line",
+        "body": "oracle_text",
+        "stats": [
+          "power",
+          "toughness"
+        ],
+        "stats_separator": "/",
+        "colour": "color",
+        "art_label": "art_label",
+        "front_image": "front_image",
+        "back_image": "back_image",
+        "default_frame_colour": "#7A7D80",
+        "colour_map": {
+          "W": "#C7BF94",
+          "U": "#3D7AB8",
+          "B": "#4D4A57",
+          "R": "#B34733",
+          "G": "#3D874F",
+          "C": "#7A7D80"
+        },
+        "frame_colour_rules": [
+          {
+            "field": "type_line",
+            "contains": "Land",
+            "colour": "#8F6D47"
+          }
+        ],
+        "art_label_rules": [
+          {
+            "field": "type_line",
+            "contains": "Creature",
+            "label": "CREATURE"
+          },
+          {
+            "field": "type_line",
+            "contains": "Land",
+            "label": "LAND"
+          },
+          {
+            "field": "type_line",
+            "contains": "Instant",
+            "label": "INSTANT"
+          },
+          {
+            "field": "type_line",
+            "contains": "Sorcery",
+            "label": "SORCERY"
+          },
+          {
+            "field": "type_line",
+            "contains": "Enchantment",
+            "label": "ENCHANTMENT"
+          },
+          {
+            "field": "type_line",
+            "contains": "Artifact",
+            "label": "ARTIFACT"
+          }
+        ],
+        "default_art_label": "CARD"
+      },
+      "summary": {
+        "namespace": "card",
+        "default": {
+          "mode": "count",
+          "value_field": "",
+          "filter": ""
+        },
+        "value_fields": [
+          {
+            "path": "card.mana_value",
+            "label": "Mana value"
+          }
+        ],
+        "field_aliases": {
+          "type": {
+            "source": "type_line",
+            "transform": "lower"
+          },
+          "text": "oracle_text",
+          "mana_value": "mana_value",
+          "name": "name",
+          "colour": "color",
+          "set": "set_code",
+          "record_id": "record_id",
+          "language": "language",
+          "finish": "finish",
+          "collector_number": "collector_number"
+        },
+        "filter_language": "open_table_expression_v1",
+        "examples": [
+          "card.type.match(/(instant|sorcery)/) && card.mana_value >= 5",
+          "card.mana_value >= 4"
+        ]
+      },
+      "group": {
+        "enabled": true,
+        "family": "card",
+        "ordered": true,
+        "layouts": {
+          "collapsed": {
+            "renderer": "layered"
+          },
+          "spread": {
+            "renderer": "overlapping_row"
+          },
+          "fully_spread": {
+            "renderer": "separated_row"
+          }
+        },
+        "default_layout": "collapsed"
+      }
+    },
+    "token": {
+      "extends": "card",
+      "fields": {
+        "is_token": {
+          "type": "bool",
+          "default": true
+        }
+      }
+    }
+  },
+  "settings": {
+    "snap_grid_size": {
+      "label": "Card snap-grid spacing",
+      "type": "number",
+      "default": 150,
+      "min": 50,
+      "max": 300,
+      "step": 10,
+      "engine_binding": "card_snap_grid"
+    }
+  }
+}

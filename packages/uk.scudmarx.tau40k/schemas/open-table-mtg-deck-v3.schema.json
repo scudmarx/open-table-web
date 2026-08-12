@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opentable.local/schemas/open-table-mtg-deck-v3.schema.json",
+  "title": "OpenTable Magic Deck v3",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "format",
+    "format_version",
+    "id",
+    "name",
+    "sections"
+  ],
+  "properties": {
+    "format": {
+      "const": "open-table-mtg-deck"
+    },
+    "format_version": {
+      "const": 3
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "stack": {
+      "type": "object"
+    },
+    "sections": {
+      "type": "object",
+      "required": [
+        "mainboard"
+      ],
+      "properties": {
+        "commanders": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/entry"
+          }
+        },
+        "mainboard": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/entry"
+          }
+        },
+        "sideboard": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/entry"
+          }
+        },
+        "companions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/entry"
+          }
+        },
+        "maybeboard": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/entry"
+          }
+        }
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/entry"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "required": [
+        "quantity",
+        "card"
+      ],
+      "properties": {
+        "quantity": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "finish": {
+          "enum": [
+            "nonfoil",
+            "foil",
+            "etched"
+          ]
+        },
+        "language": {
+          "type": "string"
+        },
+        "card": {
+          "$ref": "#/$defs/cardReference"
+        }
+      },
+      "additionalProperties": true
+    },
+    "cardReference": {
+      "type": "object",
+      "minProperties": 1,
+      "properties": {
+        "record_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "set_code": {
+          "type": "string"
+        },
+        "collector_number": {
+          "type": "string"
+        },
+        "identifiers": {
+          "type": "object",
+          "properties": {
+            "scryfall_id": {
+              "type": [
+                "string",
+                "integer"
+              ]
+            },
+            "scryfall_oracle_id": {
+              "type": [
+                "string",
+                "integer"
+              ]
+            },
+            "mtgjson_uuid": {
+              "type": [
+                "string",
+                "integer"
+              ]
+            },
+            "mtgjson_v4_id": {
+              "type": [
+                "string",
+                "integer"
+              ]
+            },
+            "mtgo_id": {
+              "type": [
+                "string",
+                "integer"
+              ]
+            },
+            "arena_id": {
+              "type": [
+                "string",
+                "integer"
+              ]
+            },
+            "multiverse_id": {
+              "type": [
+                "string",
+                "integer"
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "scryfall_id": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "scryfall_oracle_id": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "mtgjson_uuid": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "mtgjson_v4_id": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "mtgo_id": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "arena_id": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "multiverse_id": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

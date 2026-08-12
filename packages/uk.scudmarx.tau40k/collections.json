@@ -1,0 +1,7 @@
+{
+  "format": "open-table-collection-bundle",
+  "format_version": 1,
+  "collections": [
+    "decklists/tau40k.json"
+  ]
+}

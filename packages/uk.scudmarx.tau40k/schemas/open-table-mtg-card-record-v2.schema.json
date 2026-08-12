@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opentable.local/schemas/open-table-mtg-card-record-v2.schema.json",
+  "title": "OpenTable Magic Card Record v2",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "record_id",
+    "name",
+    "set_code",
+    "collector_number"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "identifiers": {
+      "type": "object",
+      "properties": {
+        "scryfall_id": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "scryfall_oracle_id": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "mtgjson_uuid": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "mtgjson_v4_id": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "mtgo_id": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "arena_id": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "multiverse_id": {
+          "type": [
+            "string",
+            "integer"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mana_cost": {
+      "type": "string"
+    },
+    "mana_value": {
+      "type": "number"
+    },
+    "type_line": {
+      "type": "string"
+    },
+    "oracle_text": {
+      "type": "string"
+    },
+    "power": {
+      "type": "string"
+    },
+    "toughness": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "set_code": {
+      "type": "string",
+      "minLength": 1
+    },
+    "collector_number": {
+      "type": "string",
+      "minLength": 1
+    },
+    "language": {
+      "type": "string",
+      "default": "en"
+    },
+    "finishes": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "nonfoil",
+          "foil",
+          "etched"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "is_token": {
+      "type": "boolean"
+    },
+    "front_image": {
+      "type": "string"
+    },
+    "back_image": {
+      "type": "string"
+    }
+  }
+}

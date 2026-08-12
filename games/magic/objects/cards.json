@@ -1,0 +1,529 @@
+{
+  "format": "open-table-object-library",
+  "format_version": 3,
+  "library": "Magic welcome cards",
+  "objects": {
+    "plains": {
+      "name": "Plains",
+      "mana_cost": "",
+      "type_line": "Basic Land — Plains",
+      "oracle_text": "{T}: Add {W}.",
+      "color": "W",
+      "art_label": "PLAINS",
+      "mana_value": 0,
+      "record_id": "org.opentable.magic.base:plains",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "savannah_lions": {
+      "name": "Savannah Lions",
+      "mana_cost": "{W}",
+      "type_line": "Creature — Cat",
+      "oracle_text": "",
+      "power": "2",
+      "toughness": "1",
+      "color": "W",
+      "art_label": "CAT",
+      "mana_value": 1,
+      "record_id": "org.opentable.magic.base:savannah_lions",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "alpine_watchdog": {
+      "name": "Alpine Watchdog",
+      "mana_cost": "{1}{W}",
+      "type_line": "Creature — Dog",
+      "oracle_text": "Vigilance",
+      "power": "2",
+      "toughness": "2",
+      "color": "W",
+      "art_label": "DOG",
+      "mana_value": 2,
+      "record_id": "org.opentable.magic.base:alpine_watchdog",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "linden_the_steadfast_queen": {
+      "name": "Linden, the Steadfast Queen",
+      "mana_cost": "{1}{W}{W}{W}",
+      "type_line": "Legendary Creature — Human Noble",
+      "oracle_text": "Vigilance\nWhenever a white creature you control attacks, you gain 1 life.",
+      "power": "3",
+      "toughness": "3",
+      "color": "W",
+      "art_label": "QUEEN",
+      "mana_value": 4,
+      "record_id": "org.opentable.magic.base:linden_the_steadfast_queen",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "search_party_captain": {
+      "name": "Search Party Captain",
+      "mana_cost": "{3}{W}",
+      "type_line": "Creature — Human Soldier",
+      "oracle_text": "This spell costs {1} less to cast for each creature you attacked with this turn.\nWhen this creature enters, draw a card.",
+      "power": "2",
+      "toughness": "2",
+      "color": "W",
+      "art_label": "CAPTAIN",
+      "mana_value": 4,
+      "record_id": "org.opentable.magic.base:search_party_captain",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "mighty_leap": {
+      "name": "Mighty Leap",
+      "mana_cost": "{1}{W}",
+      "type_line": "Instant",
+      "oracle_text": "Target creature gets +2/+2 and gains flying until end of turn.",
+      "color": "W",
+      "art_label": "LEAP",
+      "mana_value": 2,
+      "record_id": "org.opentable.magic.base:mighty_leap",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "territorial_hammerskull": {
+      "name": "Territorial Hammerskull",
+      "mana_cost": "{2}{W}",
+      "type_line": "Creature — Dinosaur",
+      "oracle_text": "Whenever this creature attacks, tap target creature an opponent controls.",
+      "power": "2",
+      "toughness": "3",
+      "color": "W",
+      "art_label": "DINOSAUR",
+      "mana_value": 3,
+      "record_id": "org.opentable.magic.base:territorial_hammerskull",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "banishing_light": {
+      "name": "Banishing Light",
+      "mana_cost": "{2}{W}",
+      "type_line": "Enchantment",
+      "oracle_text": "When this enchantment enters, exile target nonland permanent an opponent controls until this enchantment leaves the battlefield.",
+      "color": "W",
+      "art_label": "LIGHT",
+      "mana_value": 3,
+      "record_id": "org.opentable.magic.base:banishing_light",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "odric_lunarch_marshal": {
+      "name": "Odric, Lunarch Marshal",
+      "mana_cost": "{3}{W}",
+      "type_line": "Legendary Creature — Human Soldier",
+      "oracle_text": "At the beginning of each combat, creatures you control gain first strike until end of turn if a creature you control has first strike. The same is true for flying, deathtouch, double strike, haste, hexproof, indestructible, lifelink, menace, reach, skulk, trample, and vigilance.",
+      "power": "3",
+      "toughness": "3",
+      "color": "W",
+      "art_label": "MARSHAL",
+      "mana_value": 4,
+      "record_id": "org.opentable.magic.base:odric_lunarch_marshal",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "aerial_responder": {
+      "name": "Aerial Responder",
+      "mana_cost": "{1}{W}{W}",
+      "type_line": "Creature — Dwarf Soldier",
+      "oracle_text": "Flying, vigilance, lifelink",
+      "power": "2",
+      "toughness": "3",
+      "color": "W",
+      "art_label": "RESPONDER",
+      "mana_value": 3,
+      "record_id": "org.opentable.magic.base:aerial_responder",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "valorous_stance": {
+      "name": "Valorous Stance",
+      "mana_cost": "{1}{W}",
+      "type_line": "Instant",
+      "oracle_text": "Choose one —\n• Target creature gains indestructible until end of turn.\n• Destroy target creature with toughness 4 or greater.",
+      "color": "W",
+      "art_label": "STANCE",
+      "mana_value": 2,
+      "record_id": "org.opentable.magic.base:valorous_stance",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "canyon_jerboa": {
+      "name": "Canyon Jerboa",
+      "mana_cost": "{2}{W}",
+      "type_line": "Creature — Mouse",
+      "oracle_text": "Landfall — Whenever a land you control enters, creatures you control get +1/+1 until end of turn.",
+      "power": "1",
+      "toughness": "2",
+      "color": "W",
+      "art_label": "MOUSE",
+      "mana_value": 3,
+      "record_id": "org.opentable.magic.base:canyon_jerboa",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "serra_angel": {
+      "name": "Serra Angel",
+      "mana_cost": "{3}{W}{W}",
+      "type_line": "Creature — Angel",
+      "oracle_text": "Flying, vigilance",
+      "power": "4",
+      "toughness": "4",
+      "color": "W",
+      "art_label": "ANGEL",
+      "mana_value": 5,
+      "record_id": "org.opentable.magic.base:serra_angel",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "mesa_unicorn": {
+      "name": "Mesa Unicorn",
+      "mana_cost": "{1}{W}",
+      "type_line": "Creature — Unicorn",
+      "oracle_text": "Lifelink",
+      "power": "2",
+      "toughness": "2",
+      "color": "W",
+      "art_label": "UNICORN",
+      "mana_value": 2,
+      "record_id": "org.opentable.magic.base:mesa_unicorn",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "silverbeak_griffin": {
+      "name": "Silverbeak Griffin",
+      "mana_cost": "{3}{W}",
+      "type_line": "Creature — Griffin",
+      "oracle_text": "Flying",
+      "power": "2",
+      "toughness": "2",
+      "color": "W",
+      "art_label": "GRIFFIN",
+      "mana_value": 4,
+      "record_id": "org.opentable.magic.base:silverbeak_griffin",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "pacifism": {
+      "name": "Pacifism",
+      "mana_cost": "{1}{W}",
+      "type_line": "Enchantment — Aura",
+      "oracle_text": "Enchant creature\nEnchanted creature can't attack or block.",
+      "color": "W",
+      "art_label": "AURA",
+      "mana_value": 2,
+      "record_id": "org.opentable.magic.base:pacifism",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "island": {
+      "name": "Island",
+      "mana_cost": "",
+      "type_line": "Basic Land — Island",
+      "oracle_text": "{T}: Add {U}.",
+      "color": "U",
+      "art_label": "ISLAND",
+      "mana_value": 0,
+      "record_id": "org.opentable.magic.base:island",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "cloudkin_seer": {
+      "name": "Cloudkin Seer",
+      "mana_cost": "{2}{U}",
+      "type_line": "Creature — Elemental Wizard",
+      "oracle_text": "Flying\nWhen this creature enters, draw a card.",
+      "power": "2",
+      "toughness": "1",
+      "color": "U",
+      "art_label": "SEER",
+      "mana_value": 3,
+      "record_id": "org.opentable.magic.base:cloudkin_seer",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "vedalken_mesmerist": {
+      "name": "Vedalken Mesmerist",
+      "mana_cost": "{1}{U}",
+      "type_line": "Creature — Vedalken Wizard",
+      "oracle_text": "Whenever this creature attacks, target creature an opponent controls gets -2/-0 until end of turn.",
+      "power": "2",
+      "toughness": "1",
+      "color": "U",
+      "art_label": "MESMERIST",
+      "mana_value": 2,
+      "record_id": "org.opentable.magic.base:vedalken_mesmerist",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "academy_journeymage": {
+      "name": "Academy Journeymage",
+      "mana_cost": "{4}{U}",
+      "type_line": "Creature — Human Wizard",
+      "oracle_text": "This spell costs {1} less to cast if you control a Wizard.\nWhen this creature enters, return target creature an opponent controls to its owner’s hand.",
+      "power": "3",
+      "toughness": "2",
+      "color": "U",
+      "art_label": "JOURNEYMAGE",
+      "mana_value": 5,
+      "record_id": "org.opentable.magic.base:academy_journeymage",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "chart_a_course": {
+      "name": "Chart a Course",
+      "mana_cost": "{1}{U}",
+      "type_line": "Sorcery",
+      "oracle_text": "Draw two cards. Then discard a card unless you attacked this turn.",
+      "color": "U",
+      "art_label": "CHART",
+      "mana_value": 2,
+      "record_id": "org.opentable.magic.base:chart_a_course",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "chilling_trap": {
+      "name": "Chilling Trap",
+      "mana_cost": "{U}",
+      "type_line": "Instant",
+      "oracle_text": "Target creature gets -4/-0 until end of turn. If you control a Wizard, draw a card.",
+      "color": "U",
+      "art_label": "TRAP",
+      "mana_value": 1,
+      "record_id": "org.opentable.magic.base:chilling_trap",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "frost_trickster": {
+      "name": "Frost Trickster",
+      "mana_cost": "{2}{U}",
+      "type_line": "Creature — Bird Wizard",
+      "oracle_text": "Flying\nWhen this creature enters, tap target creature an opponent controls. That creature doesn’t untap during its controller’s next untap step.",
+      "power": "2",
+      "toughness": "2",
+      "color": "U",
+      "art_label": "TRICKSTER",
+      "mana_value": 3,
+      "record_id": "org.opentable.magic.base:frost_trickster",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "cyclone_summoner": {
+      "name": "Cyclone Summoner",
+      "mana_cost": "{5}{U}{U}",
+      "type_line": "Creature — Giant Wizard",
+      "oracle_text": "When this creature enters, if you cast it from your hand, return all permanents to their owners’ hands except for Giants, Wizards, and lands.",
+      "power": "7",
+      "toughness": "7",
+      "color": "U",
+      "art_label": "CYCLONE",
+      "mana_value": 7,
+      "record_id": "org.opentable.magic.base:cyclone_summoner",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "metropolis_sprite": {
+      "name": "Metropolis Sprite",
+      "mana_cost": "{1}{U}",
+      "type_line": "Creature — Faerie Rogue",
+      "oracle_text": "Flying\n{U}: This creature gets +1/-1 until end of turn.",
+      "power": "1",
+      "toughness": "2",
+      "color": "U",
+      "art_label": "SPRITE",
+      "mana_value": 2,
+      "record_id": "org.opentable.magic.base:metropolis_sprite",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "gadwick_the_wizened": {
+      "name": "Gadwick, the Wizened",
+      "mana_cost": "{X}{U}{U}{U}",
+      "type_line": "Legendary Creature — Human Wizard",
+      "oracle_text": "When Gadwick enters, draw X cards.\nWhenever you cast a blue spell, tap target nonland permanent an opponent controls.",
+      "power": "3",
+      "toughness": "3",
+      "color": "U",
+      "art_label": "GADWICK",
+      "mana_value": 3,
+      "record_id": "org.opentable.magic.base:gadwick_the_wizened",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "archaeomancer": {
+      "name": "Archaeomancer",
+      "mana_cost": "{2}{U}{U}",
+      "type_line": "Creature — Human Wizard",
+      "oracle_text": "When this creature enters, return target instant or sorcery card from your graveyard to your hand.",
+      "power": "1",
+      "toughness": "2",
+      "color": "U",
+      "art_label": "ARCHAEOMANCER",
+      "mana_value": 4,
+      "record_id": "org.opentable.magic.base:archaeomancer",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "serpentine_ambush": {
+      "name": "Serpentine Ambush",
+      "mana_cost": "{1}{U}",
+      "type_line": "Instant",
+      "oracle_text": "Until end of turn, target creature becomes a blue Serpent with base power and toughness 5/5.",
+      "color": "U",
+      "art_label": "SERPENT",
+      "mana_value": 2,
+      "record_id": "org.opentable.magic.base:serpentine_ambush",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "charmed_sleep": {
+      "name": "Charmed Sleep",
+      "mana_cost": "{1}{U}{U}",
+      "type_line": "Enchantment — Aura",
+      "oracle_text": "Enchant creature\nWhen this Aura enters, tap enchanted creature.\nEnchanted creature doesn’t untap during its controller’s untap step.",
+      "color": "U",
+      "art_label": "SLEEP",
+      "mana_value": 3,
+      "record_id": "org.opentable.magic.base:charmed_sleep",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "tetsuko_umezawa_fugitive": {
+      "name": "Tetsuko Umezawa, Fugitive",
+      "mana_cost": "{1}{U}",
+      "type_line": "Legendary Creature — Human Rogue",
+      "oracle_text": "Creatures you control with power or toughness 1 or less can’t be blocked.",
+      "power": "1",
+      "toughness": "3",
+      "color": "U",
+      "art_label": "FUGITIVE",
+      "mana_value": 2,
+      "record_id": "org.opentable.magic.base:tetsuko_umezawa_fugitive",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "quicksilver_fisher": {
+      "name": "Quicksilver Fisher",
+      "mana_cost": "{3}{U}{U}",
+      "type_line": "Creature — Phyrexian Drake",
+      "oracle_text": "Flying\nWhen this creature enters, draw a card, then discard a card.",
+      "power": "4",
+      "toughness": "3",
+      "color": "U",
+      "art_label": "FISHER",
+      "mana_value": 5,
+      "record_id": "org.opentable.magic.base:quicksilver_fisher",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    },
+    "geistwave": {
+      "name": "Geistwave",
+      "mana_cost": "{1}{U}",
+      "type_line": "Instant",
+      "oracle_text": "Return target nonland permanent to its owner’s hand. If you controlled that permanent, draw a card.",
+      "color": "U",
+      "art_label": "GEISTWAVE",
+      "mana_value": 2,
+      "record_id": "org.opentable.magic.base:geistwave",
+      "identifiers": {},
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ]
+    }
+  }
+}

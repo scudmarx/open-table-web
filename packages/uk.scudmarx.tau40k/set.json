@@ -1,0 +1,10 @@
+{
+  "format": "open-table-record-package",
+  "format_version": 2,
+  "game": "magic",
+  "code": "TAU",
+  "name": "T'au — For the Greater Good",
+  "description": "Custom T’au/Warhammer 40,000 card records for the OpenTable Tau Commander deck.",
+  "cards_file": "cards/tau40k_cards.json",
+  "identifier_namespace": "uk.scudmarx.tau40k"
+}

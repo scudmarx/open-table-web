@@ -1,0 +1,127 @@
+{
+  "id": "welcome_white_2024",
+  "name": "2024 White Welcome Deck",
+  "stack": {
+    "name": "Library",
+    "key": "library",
+    "persistent": true,
+    "spread": false,
+    "face_up": false,
+    "actions": [
+      "draw_private",
+      "shuffle",
+      "toggle_spread",
+      "take_top",
+      "rename_stack",
+      "generic_collection_summary",
+      "delete_object"
+    ]
+  },
+  "format": "open-table-mtg-deck",
+  "format_version": 3,
+  "description": "Official 30-card white introductory Welcome Deck released in 2024.",
+  "sections": {
+    "commanders": [],
+    "mainboard": [
+      {
+        "quantity": 13,
+        "card": {
+          "object": "plains"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "savannah_lions"
+        }
+      },
+      {
+        "quantity": 2,
+        "card": {
+          "object": "alpine_watchdog"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "linden_the_steadfast_queen"
+        }
+      },
+      {
+        "quantity": 2,
+        "card": {
+          "object": "search_party_captain"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "mighty_leap"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "territorial_hammerskull"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "banishing_light"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "odric_lunarch_marshal"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "aerial_responder"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "valorous_stance"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "canyon_jerboa"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "serra_angel"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "mesa_unicorn"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "silverbeak_griffin"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "pacifism"
+        }
+      }
+    ],
+    "sideboard": [],
+    "companions": [],
+    "maybeboard": []
+  }
+}

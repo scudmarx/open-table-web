@@ -1,0 +1,93 @@
+{
+  "format": "open-table-setup",
+  "format_version": 1,
+  "id": "default_table",
+  "name": "Standard table",
+  "per_player_collections": [
+    {
+      "name": "Library",
+      "key": "library",
+      "zone": "hidden",
+      "default_for_zone": true,
+      "layout_mode": "collapsed",
+      "face_up": false,
+      "draw_target": "hand",
+      "actions": [
+        "draw_private",
+        "shuffle",
+        "toggle_spread",
+        "take_top",
+        "rename_stack",
+        "delete_object"
+      ]
+    },
+    {
+      "name": "Hand",
+      "key": "hand",
+      "zone": "private",
+      "default_for_zone": true,
+      "layout_mode": "fully_spread",
+      "face_up": true,
+      "actions": [
+        "take_card",
+        "toggle_spread",
+        "flip",
+        "toggle_tapped",
+        "rotate_clockwise",
+        "card_counter_plus",
+        "card_counter_minus",
+        "rename_stack",
+        "generic_collection_summary",
+        "delete_object"
+      ],
+      "collection_summary_mode": "count",
+      "collection_summary_location": "label_suffix"
+    },
+    {
+      "name": "Graveyard",
+      "key": "graveyard",
+      "zone": "public",
+      "anchor": "graveyard",
+      "layout_mode": "collapsed",
+      "face_up": true,
+      "show_slot": true,
+      "drop_radius": 185,
+      "actions": [
+        "take_card",
+        "toggle_spread",
+        "flip",
+        "toggle_tapped",
+        "rotate_clockwise",
+        "shuffle",
+        "card_counter_plus",
+        "card_counter_minus",
+        "rename_stack",
+        "delete_object"
+      ]
+    }
+  ],
+  "per_player_objects": [
+    {
+      "name": "{player} Life",
+      "owner": "{player_id}",
+      "zone": "public",
+      "anchor": "life",
+      "counter_value": 20,
+      "counter_last_delta": -1,
+      "objects": [
+        {
+          "object_type": "counter",
+          "name": "Life total"
+        }
+      ],
+      "actions": [
+        "generic_counter_minus",
+        "generic_counter_plus",
+        "generic_counter_set",
+        "generic_counter_label",
+        "generic_position_lock",
+        "generic_delete"
+      ]
+    }
+  ]
+}

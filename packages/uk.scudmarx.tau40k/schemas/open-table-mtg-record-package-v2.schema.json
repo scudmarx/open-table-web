@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opentable.local/schemas/open-table-mtg-record-package-v2.schema.json",
+  "title": "OpenTable Magic Record Package v2",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "format",
+    "format_version",
+    "set_code",
+    "cards"
+  ],
+  "properties": {
+    "format": {
+      "const": "open-table-card-printings"
+    },
+    "format_version": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "set_code": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "array",
+      "items": {
+        "$ref": "open-table-mtg-card-record-v2.schema.json"
+      }
+    }
+  }
+}

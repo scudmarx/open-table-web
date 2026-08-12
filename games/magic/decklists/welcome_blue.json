@@ -1,0 +1,127 @@
+{
+  "format": "open-table-mtg-deck",
+  "format_version": 3,
+  "id": "welcome_blue_2024",
+  "name": "2024 Blue Welcome Deck",
+  "description": "Official 30-card blue introductory Welcome Deck released in 2024.",
+  "stack": {
+    "name": "Library",
+    "key": "library",
+    "persistent": true,
+    "spread": false,
+    "face_up": false,
+    "actions": [
+      "draw_private",
+      "shuffle",
+      "toggle_spread",
+      "take_top",
+      "rename_stack",
+      "generic_collection_summary",
+      "delete_object"
+    ]
+  },
+  "sections": {
+    "commanders": [],
+    "mainboard": [
+      {
+        "quantity": 13,
+        "card": {
+          "object": "island"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "cloudkin_seer"
+        }
+      },
+      {
+        "quantity": 2,
+        "card": {
+          "object": "vedalken_mesmerist"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "academy_journeymage"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "chart_a_course"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "chilling_trap"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "frost_trickster"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "cyclone_summoner"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "metropolis_sprite"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "gadwick_the_wizened"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "archaeomancer"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "serpentine_ambush"
+        }
+      },
+      {
+        "quantity": 2,
+        "card": {
+          "object": "charmed_sleep"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "tetsuko_umezawa_fugitive"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "quicksilver_fisher"
+        }
+      },
+      {
+        "quantity": 1,
+        "card": {
+          "object": "geistwave"
+        }
+      }
+    ],
+    "sideboard": [],
+    "companions": [],
+    "maybeboard": []
+  }
+}

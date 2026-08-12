@@ -1,0 +1,68 @@
+{
+  "format": "open-table-package",
+  "format_version": 1,
+  "id": "org.opentable.magic",
+  "name": "Magic: The Gathering",
+  "version": "0.28.1",
+  "package_type": "game",
+  "description": "A rule-neutral Magic tabletop package with ecosystem-compatible card identifiers, sectioned deck import, and generic life counters.",
+  "api": {
+    "open_table": ">=1.0,<2.0",
+    "state_schema": 1
+  },
+  "entrypoints": {
+    "game": "game.json"
+  },
+  "dependencies": [
+    {
+      "id": "org.opentable.generic",
+      "version": ">=1.0,<2.0",
+      "optional": false,
+      "reason": "Provides generic counters, labels, randomisers and collection actions."
+    }
+  ],
+  "exports": {
+    "schemas": [
+      "card",
+      "token"
+    ],
+    "actions": [
+      "card_counter_minus",
+      "card_counter_plus",
+      "delete_object",
+      "draw_private",
+      "flip",
+      "rename_stack",
+      "rotate_clockwise",
+      "shuffle",
+      "take_card",
+      "take_top",
+      "toggle_spread",
+      "toggle_tapped"
+    ],
+    "catalogues": [
+      "card_sets",
+      "decks"
+    ],
+    "objects": [
+      "card",
+      "token"
+    ]
+  },
+  "content": {
+    "include": [
+      "package.json",
+      "game.json",
+      "assets/**",
+      "objects/**",
+      "setups/**",
+      "decklists/**"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Open Table"
+    }
+  ],
+  "license": "Package definition for personal tabletop use; game names and card data remain the property of their respective owners."
+}

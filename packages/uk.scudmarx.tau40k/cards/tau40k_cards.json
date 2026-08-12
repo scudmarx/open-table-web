@@ -1,0 +1,1957 @@
+{
+  "$schema": "../schemas/open-table-mtg-record-package-v2.schema.json",
+  "format": "open-table-card-printings",
+  "format_version": 2,
+  "set_code": "TAU",
+  "set_name": "T'au — For the Greater Good",
+  "description": "Custom T'au/Warhammer 40,000 card records for the OpenTable Tau Commander deck.",
+  "cards": [
+    {
+      "record_id": "uk.scudmarx.tau40k:038",
+      "name": "Aun'va, Master of the Undying Spirit",
+      "mana_cost": "{U}{R}{W}",
+      "mana_value": 3,
+      "type_line": "Legendary Creature — Tau Noble",
+      "oracle_text": "Ward 2\nWhenever one or more creatures attack, if Aun’va isn’t prepared, put that many meditation counters on him, then if there are 5 or more meditation counters on him remove them all and he becomes prepared.\n\nPrepared — For the Greater Good {U}{R}{W}\nInstant\nPut a +1/+1 counter on each Tau you control. Create a Treasure token. Scry 2, then draw a card.",
+      "color": "WUR",
+      "color_identity": "WUR",
+      "set_code": "TAU",
+      "collector_number": "038",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "mythic rare",
+      "layout": "prepared",
+      "is_token": false,
+      "power": "1",
+      "toughness": "5",
+      "prepared_spell": {
+        "name": "For the Greater Good",
+        "mana_cost": "{U}{R}{W}",
+        "mana_value": 3,
+        "type_line": "Instant",
+        "oracle_text": "Put a +1/+1 counter on each Tau you control. Create a Treasure token. Scry 2, then draw a card.",
+        "color": "WUR"
+      }
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:037",
+      "name": "Aun'Shi, Steel Resolve",
+      "mana_cost": "{U}{R}{W}",
+      "mana_value": 3,
+      "type_line": "Legendary Creature — Tau Warrior",
+      "oracle_text": "Vigilance, prowess\nWhen Aun’shi enters, and at the beginning of your upkeep, Aun’shi becomes prepared.\n\nPrepared — Elemental Invocation {U}{R}{W}\nInstant\nElemental Invocation deals 2 damage divided as you choose among one or two targets. Draw a card.",
+      "color": "WUR",
+      "color_identity": "WUR",
+      "set_code": "TAU",
+      "collector_number": "037",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "prepared",
+      "is_token": false,
+      "power": "3",
+      "toughness": "3",
+      "prepared_spell": {
+        "name": "Elemental Invocation",
+        "mana_cost": "{U}{R}{W}",
+        "mana_value": 3,
+        "type_line": "Instant",
+        "oracle_text": "Elemental Invocation deals 2 damage divided as you choose among one or two targets. Draw a card.",
+        "color": "WUR"
+      }
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:048",
+      "name": "O'Shaserra, Shadowsun",
+      "mana_cost": "{2}{W}{U}",
+      "mana_value": 4,
+      "type_line": "Legendary Creature — Tau Battlesuit Soldier",
+      "oracle_text": "Vigilance, ward 2\nO’Shaserra can’t be blocked.\nWhenever O’Shaserra attacks, target creature becomes goaded until your next turn.\nWhenever one or more creatures attack you, tap one of them and put a stun counter on it.",
+      "color": "WU",
+      "color_identity": "WU",
+      "set_code": "TAU",
+      "collector_number": "048",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "mythic rare",
+      "layout": "normal",
+      "is_token": false,
+      "power": "2",
+      "toughness": "4"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:049",
+      "name": "O'Shovah, Farsight",
+      "mana_cost": "{4}{R}{W}",
+      "mana_value": 6,
+      "type_line": "Legendary Creature — Tau Battlesuit Soldier",
+      "oracle_text": "Flying, double strike, haste.\nWhen O’Shovah enters or attacks, Battlesuits you control get +1/+1 until end of turn.",
+      "color": "WR",
+      "color_identity": "WR",
+      "set_code": "TAU",
+      "collector_number": "049",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "mythic rare",
+      "layout": "normal",
+      "is_token": false,
+      "power": "3",
+      "toughness": "5"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:t002",
+      "name": "Gun Drone",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Token Artifact Creature — Drone",
+      "oracle_text": "Flying",
+      "color": "",
+      "color_identity": "",
+      "set_code": "TAU",
+      "collector_number": "T002",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "token",
+      "is_token": true,
+      "power": "1",
+      "toughness": "1"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:020",
+      "name": "Water Caste Diplomacy",
+      "mana_cost": "{2}{U}",
+      "mana_value": 3,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever an opponent casts a spell other than the first spell they cast during their turn, you may draw a card unless that player pays 1.",
+      "color": "U",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "020",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false,
+      "flavor_text": "“Every trade agreement has a cost. Read the fine print.” — Por’el J’Kaara"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:039",
+      "name": "Commander Puretide",
+      "mana_cost": "{1}{U}{R}{W}",
+      "mana_value": 4,
+      "type_line": "Legendary Creature — Tau Soldier Hero",
+      "oracle_text": "When Puretide enters, create a Gun Drone for each time you’ve cast a commander from the command zone this game.\nAs Puretide enters and at the beginning of your upkeep, choose Kauyon or Mont’ka.\nKauyon — Creatures you control get +0/+1 and have ward 1.\nMont’ka — Creatures you control get +1/+0 and have haste.\nWhen Puretide dies, if it was a creature, return it to the battlefield under its owner’s control. It’s an artifact and loses all other card types.",
+      "color": "WUR",
+      "color_identity": "WUR",
+      "set_code": "TAU",
+      "collector_number": "039",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "mythic rare",
+      "layout": "normal",
+      "is_token": false,
+      "power": "3",
+      "toughness": "3"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:030",
+      "name": "Shas'vre T'au Kais",
+      "mana_cost": "{R}{R}",
+      "mana_value": 2,
+      "type_line": "Legendary Creature — Tau Soldier",
+      "oracle_text": "First strike\nWhen Kais enters, he deals 2 damage to any target. Create a Gun Drone.",
+      "color": "R",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "030",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false,
+      "power": "2",
+      "toughness": "2"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:036",
+      "name": "Aun'el Kah",
+      "mana_cost": "{U}{R}",
+      "mana_value": 2,
+      "type_line": "Legendary Creature — Tau Warrior Hero",
+      "oracle_text": "Vigilance, prowess, haste\nAun’el Kah enters prepared.\nWhenever a legendary creature dies, Kah becomes prepared.\n\nPrepared — Moment of Contemplation {U}\nSorcery\nDraw a card.",
+      "color": "UR",
+      "color_identity": "UR",
+      "set_code": "TAU",
+      "collector_number": "036",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "prepared",
+      "is_token": false,
+      "power": "1",
+      "toughness": "3",
+      "prepared_spell": {
+        "name": "Moment of Contemplation",
+        "mana_cost": "{U}",
+        "mana_value": 1,
+        "type_line": "Sorcery",
+        "oracle_text": "Draw a card.",
+        "color": "U"
+      }
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:044",
+      "name": "Fio'la Gui'do",
+      "mana_cost": "{W}{U}",
+      "mana_value": 2,
+      "type_line": "Legendary Creature — Tau Artificer",
+      "oracle_text": "When Gui’do enters, create a Gun Drone.\n3, T: Create a Gun Drone.\nSacrifice a Drone: Target creature gains hexproof and indestructible until end of turn. Activate this ability no more than once each turn.",
+      "color": "WU",
+      "color_identity": "WU",
+      "set_code": "TAU",
+      "collector_number": "044",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false,
+      "power": "1",
+      "toughness": "1"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:046",
+      "name": "Kor'vesa Support",
+      "mana_cost": "{U}{R}",
+      "mana_value": 2,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever you cast a noncreature spell, choose one that hasn’t been chosen this turn —\n• Create a Gun Drone\n• Create a Treasure token\n• Draw a card, then put a card from your hand on the top or bottom of your library.",
+      "color": "UR",
+      "color_identity": "UR",
+      "set_code": "TAU",
+      "collector_number": "046",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:060",
+      "name": "Puretide Memorial Library",
+      "mana_cost": "{2}",
+      "mana_value": 2,
+      "type_line": "Artifact",
+      "oracle_text": "4, T: Draw a card. This ability costs 1 less to activate for each legendary creature you control.\n2WW, T: Return target legendary creature card from your graveyard to your hand.",
+      "color": "",
+      "color_identity": "",
+      "set_code": "TAU",
+      "collector_number": "060",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:018",
+      "name": "Stealth Field",
+      "mana_cost": "{U}",
+      "mana_value": 1,
+      "type_line": "Instant",
+      "oracle_text": "Target creature phases out.\nFlashback U",
+      "color": "U",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "018",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:051",
+      "name": "Photon Grenades",
+      "mana_cost": "{1}{R}{W}",
+      "mana_value": 3,
+      "type_line": "Instant",
+      "oracle_text": "Tap up to two target creatures and put a stun counter on each of them.\nCreate two Gun Drones.",
+      "color": "WR",
+      "color_identity": "WR",
+      "set_code": "TAU",
+      "collector_number": "051",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:032",
+      "name": "Smart Missile Systems",
+      "mana_cost": "{2}{R}",
+      "mana_value": 3,
+      "type_line": "Instant",
+      "oracle_text": "Kicker 1RW (You may pay an additional 1RW as you cast this spell.)\nIf this spell’s kicker cost was paid, create an XV-8 Crisis Suit.\nPut a +1/+1 counter on each Battlesuit you control. When a counter is put on a creature this way, that creature deals 1 damage to any target.",
+      "color": "R",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "032",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:056",
+      "name": "Win Over",
+      "mana_cost": "{1}{U}{R}",
+      "mana_value": 3,
+      "type_line": "Instant",
+      "oracle_text": "Gain control of target creature. If that creature’s mana value is 6 or greater, this effect lasts until end of turn. Otherwise if its mana value is 3 or greater, this effect lasts until the end of your next turn.\nUntap that creature. It gains haste until end of turn.",
+      "color": "UR",
+      "color_identity": "UR",
+      "set_code": "TAU",
+      "collector_number": "056",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:022",
+      "name": "Water Caste Recruiter",
+      "mana_cost": "{1}{U}",
+      "mana_value": 2,
+      "type_line": "Creature — Tau Advisor",
+      "oracle_text": "Water Caste Recruiter enters prepared.\nWhenever one or more creature cards are put into your graveyard from anywhere other than the battlefield, Water Caste Recruiter becomes prepared.\nT: Draw a card, then discard a card.\n\nPrepared — Auxiliary Accord {U}{U}\nSorcery\nSearch target opponent’s library for a creature card with mana value 2 or less and put it onto the battlefield under your control. That player shuffles.",
+      "color": "U",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "022",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "prepared",
+      "is_token": false,
+      "power": "0",
+      "toughness": "2",
+      "prepared_spell": {
+        "name": "Auxiliary Accord",
+        "mana_cost": "{U}{U}",
+        "mana_value": 2,
+        "type_line": "Sorcery",
+        "oracle_text": "Search target opponent’s library for a creature card with mana value 2 or less and put it onto the battlefield under your control. That player shuffles.",
+        "color": "U"
+      }
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:021",
+      "name": "Water Caste Envoy",
+      "mana_cost": "{2}{U}",
+      "mana_value": 3,
+      "type_line": "Creature — Tau Advisor",
+      "oracle_text": "At the beginning of your upkeep, draw a card.\nAt the beginning of each other player’s upkeep, that player may pay 2. If they do, they draw a card.",
+      "color": "U",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "021",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false,
+      "power": "0",
+      "toughness": "3"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:050",
+      "name": "Pathfinder Marksman",
+      "mana_cost": "{1}{U}{R}",
+      "mana_value": 3,
+      "type_line": "Creature — Tau Soldier",
+      "oracle_text": "Haste\nWhen this creature enters or attacks, it becomes prepared.\nWhen this creature deals combat damage to a player, draw a card.\n\nPrepared — Markerlight {U/R}\nInstant\nChoose up to one creature. It loses hexproof, shroud, and ward until end of turn. Scry 1.",
+      "color": "UR",
+      "color_identity": "UR",
+      "set_code": "TAU",
+      "collector_number": "050",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "prepared",
+      "is_token": false,
+      "power": "2",
+      "toughness": "2",
+      "prepared_spell": {
+        "name": "Markerlight",
+        "mana_cost": "{U/R}",
+        "mana_value": 1,
+        "type_line": "Instant",
+        "oracle_text": "Choose up to one creature. It loses hexproof, shroud, and ward until end of turn. Scry 1.",
+        "color": "UR"
+      }
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:026",
+      "name": "Gun Drone Assault",
+      "mana_cost": "{2}{R}",
+      "mana_value": 3,
+      "type_line": "Instant",
+      "oracle_text": "Create two Gun Drones. Creatures you control with flying get +1/+0 until end of turn.",
+      "color": "R",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "026",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:042",
+      "name": "El'Sha'ng, the Viper",
+      "mana_cost": "{1}{R}{W}",
+      "mana_value": 3,
+      "type_line": "Legendary Creature — Tau Battlesuit Soldier",
+      "oracle_text": "Vigilance, lifelink, haste\nWhenever Sha’ng attacks or blocks, create a Gun Drone. If she’s attacking, that token enters tapped and attacking. If she’s blocking, you may have that token enter blocking a creature Sha’ng is blocking.",
+      "color": "WR",
+      "color_identity": "WR",
+      "set_code": "TAU",
+      "collector_number": "042",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false,
+      "power": "3",
+      "toughness": "3"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:011",
+      "name": "Tidewall Defense Platform",
+      "mana_cost": "{1}{W}",
+      "mana_value": 2,
+      "type_line": "Artifact Creature — Wall",
+      "oracle_text": "Flying, defender\nTidewall Defense Platform can block an additional creature.\nTap another untapped creature you control: Tidewall Defense Platform gets +1/+1 until end of turn.",
+      "color": "W",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "011",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false,
+      "power": "0",
+      "toughness": "4"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:053",
+      "name": "Relic Melt",
+      "mana_cost": "{R}{W}",
+      "mana_value": 2,
+      "type_line": "Instant",
+      "oracle_text": "Choose one or both —\n• Destroy target artifact\n• Destroy target enchantment.\nFlashback 4RW (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+      "color": "WR",
+      "color_identity": "WR",
+      "set_code": "TAU",
+      "collector_number": "053",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:047",
+      "name": "Mont'au Protocol",
+      "mana_cost": "{U}{R}{W}",
+      "mana_value": 3,
+      "type_line": "Instant",
+      "oracle_text": "Choose two —\n• Create two Gun Drones\n• The owner of target spell or permanent an opponent controls puts it on their choice of the top or bottom of their library.\n• Draw two cards.",
+      "color": "WUR",
+      "color_identity": "WUR",
+      "set_code": "TAU",
+      "collector_number": "047",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:054",
+      "name": "Trap of the Patient Hunter",
+      "mana_cost": "{2}{R}{W}",
+      "mana_value": 4,
+      "type_line": "Instant",
+      "oracle_text": "Trap of the Patient Hunter deals 4 damage to each attacking creature. If a creature dealt damage this way would die this turn, exile it instead.",
+      "color": "WR",
+      "color_identity": "WR",
+      "set_code": "TAU",
+      "collector_number": "054",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:010",
+      "name": "Spring the Trap",
+      "mana_cost": "{W}",
+      "mana_value": 1,
+      "type_line": "Instant",
+      "oracle_text": "Spring the Trap deals 4 damage to target tapped creature.",
+      "color": "W",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "010",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:003",
+      "name": "Dal'yth Trapper",
+      "mana_cost": "{1}{W}",
+      "mana_value": 2,
+      "type_line": "Creature — Tau Soldier",
+      "oracle_text": "W, T: Tap target creature.\nU, T: Put a stun counter on target creature.",
+      "color": "W",
+      "color_identity": "WU",
+      "set_code": "TAU",
+      "collector_number": "003",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false,
+      "power": "1",
+      "toughness": "2"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:006",
+      "name": "Ethereal Healer",
+      "mana_cost": "{W}",
+      "mana_value": 1,
+      "type_line": "Creature — Tau Cleric",
+      "oracle_text": "Whenever a creature attacks you, you gain 1 life. If this is the third time this ability has resolved this turn, Ethereal Healer becomes prepared.\n\nPrepared — Healing Salve {W}\nInstant\nChoose one —\n• Target player gains 3 life.\n• Prevent the next 3 damage that would be dealt to any target this turn.",
+      "color": "W",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "006",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "prepared",
+      "is_token": false,
+      "power": "0",
+      "toughness": "2",
+      "prepared_spell": {
+        "name": "Healing Salve",
+        "mana_cost": "{W}",
+        "mana_value": 1,
+        "type_line": "Instant",
+        "oracle_text": "Choose one —\n• Target player gains 3 life.\n• Prevent the next 3 damage that would be dealt to any target this turn.",
+        "color": "W"
+      }
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:052",
+      "name": "Por'el Shi'ur",
+      "mana_cost": "{2}{W}{U}",
+      "mana_value": 4,
+      "type_line": "Legendary Creature — Tau Advisor",
+      "oracle_text": "Flash\nWhen Shi’ur enters, tap all creatures target player controls.\nWhenever a creature attacks you, its controller may pay 1. If they don’t, tap that creature and put a stun counter on it. (It’s still attacking.)",
+      "color": "WU",
+      "color_identity": "WU",
+      "set_code": "TAU",
+      "collector_number": "052",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false,
+      "power": "2",
+      "toughness": "4"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:015",
+      "name": "Holographic Masterstroke",
+      "mana_cost": "{1}{U}",
+      "mana_value": 2,
+      "type_line": "Instant",
+      "oracle_text": "Attacking creatures become blocked.\nDraw a card.",
+      "color": "U",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "015",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:033",
+      "name": "Strike Team",
+      "mana_cost": "{1}{R}",
+      "mana_value": 2,
+      "type_line": "Creature — Tau Soldier",
+      "oracle_text": "Squad 2 (As an additional cost to cast this spell, you may pay 2 any number of times. When this creature enters, create that many tokens that are copies of it.)\nWhen Strike Team enters it deals 1 damage to any target.",
+      "color": "R",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "033",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false,
+      "power": "2",
+      "toughness": "2"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:023",
+      "name": "XV-25 Stealth Team",
+      "mana_cost": "{1}{U}{U}",
+      "mana_value": 3,
+      "type_line": "Creature — Tau Battlesuit Soldier",
+      "oracle_text": "Squad 2 (As an additional cost to cast this spell, you may pay 2 any number of times. When this creature enters, create that many tokens that are copies of it.)\nWard 2\nXV-25 Stealth Team can’t be blocked.",
+      "color": "U",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "023",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false,
+      "power": "2",
+      "toughness": "3"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:041",
+      "name": "Drone Controllers",
+      "mana_cost": "{1}{U}{R}",
+      "mana_value": 3,
+      "type_line": "Instant",
+      "oracle_text": "Kicker 1RW (You may pay an additional 1RW as you cast this spell.)\nIf this spell’s kicker cost was paid, create an XV-8 Crisis Suit.\nFor each Battlesuit you control, create a Gun Drone.\nChoose up to one target spell or ability that targets a creature you control. Change any of its targets to Drones you control.",
+      "color": "UR",
+      "color_identity": "UR",
+      "set_code": "TAU",
+      "collector_number": "041",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:045",
+      "name": "The Killing Blow",
+      "mana_cost": "{2}{W}{U}{R}",
+      "mana_value": 5,
+      "type_line": "Instant",
+      "oracle_text": "For each Battlesuit you control, create a token that’s a copy of it except the copy has haste, is an Illusion in addition to its other types, and isn’t legendary. Exile the tokens at end of combat.",
+      "color": "WUR",
+      "color_identity": "WUR",
+      "set_code": "TAU",
+      "collector_number": "045",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:024",
+      "name": "Breacher Team",
+      "mana_cost": "{2}{R}",
+      "mana_value": 3,
+      "type_line": "Creature — Tau Soldier",
+      "oracle_text": "Squad 2 (As an additional cost to cast this spell, you may pay 2 any number of times. When this creature enters, create that many tokens that are copies of it.)\nHaste",
+      "color": "R",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "024",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false,
+      "power": "3",
+      "toughness": "2"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:028",
+      "name": "Pulse Rifle Volley",
+      "mana_cost": "{R}",
+      "mana_value": 1,
+      "type_line": "Sorcery",
+      "oracle_text": "Pulse Rifle Volley deals 2 damage to any target.\nFlashback 4R (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+      "color": "R",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "028",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:001",
+      "name": "Authority of the Consuls",
+      "mana_cost": "{W}",
+      "mana_value": 1,
+      "type_line": "Enchantment",
+      "oracle_text": "Creatures your opponents control enter tapped.\nWhenever a creature an opponent controls enters, you gain 1 life.",
+      "color": "W",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "001",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false,
+      "flavor_text": "Citizens are free to do as they wish, within the confines of the Consulate’s laws."
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:005",
+      "name": "Edict of Peace",
+      "mana_cost": "{2}{W}",
+      "mana_value": 3,
+      "type_line": "Enchantment",
+      "oracle_text": "Creatures can’t attack you unless their controller pays 2 for each creature they control that’s attacking you.",
+      "color": "W",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "005",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:031",
+      "name": "Skyray Missile Bombardment",
+      "mana_cost": "{8}{R}",
+      "mana_value": 9,
+      "type_line": "Sorcery",
+      "oracle_text": "This spell costs 1 less to cast for each creature on the battlefield.\nSkyray Missile Bombardment deals 13 damage to each creature.",
+      "color": "R",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "031",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:008",
+      "name": "Path to Exile",
+      "mana_cost": "{W}",
+      "mana_value": 1,
+      "type_line": "Instant",
+      "oracle_text": "Exile target creature. Its controller may search their library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color": "W",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "008",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:002",
+      "name": "Conflict's End",
+      "mana_cost": "{W}",
+      "mana_value": 1,
+      "type_line": "Instant",
+      "oracle_text": "Exile target creature. Its controller gains life equal to its power.",
+      "color": "W",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "002",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:009",
+      "name": "Split Up",
+      "mana_cost": "{1}{W}{W}",
+      "mana_value": 3,
+      "type_line": "Sorcery",
+      "oracle_text": "Choose one —\n• Destroy all tapped creatures.\n• Destroy all untapped creatures.",
+      "color": "W",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "009",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:055",
+      "name": "Warleader's Call",
+      "mana_cost": "{1}{R}{W}",
+      "mana_value": 3,
+      "type_line": "Enchantment",
+      "oracle_text": "Creatures you control get +1/+1.\nWhenever a creature you control enters, this enchantment deals 1 damage to each opponent.",
+      "color": "WR",
+      "color_identity": "WR",
+      "set_code": "TAU",
+      "collector_number": "055",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:017",
+      "name": "Miscalculation",
+      "mana_cost": "{1}{U}",
+      "mana_value": 2,
+      "type_line": "Instant",
+      "oracle_text": "Counter target spell unless its controller pays 2.\nCycling 2 (2, Discard this card: Draw a card.)",
+      "color": "U",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "017",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:016",
+      "name": "Memory Lapse",
+      "mana_cost": "{1}{U}",
+      "mana_value": 2,
+      "type_line": "Instant",
+      "oracle_text": "Counter target spell. If that spell is countered this way, put it on top of its owner’s library instead of into that player’s graveyard.",
+      "color": "U",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "016",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:025",
+      "name": "Fusion Blaster",
+      "mana_cost": "{1}{R}",
+      "mana_value": 2,
+      "type_line": "Instant",
+      "oracle_text": "Kicker 1RW (You may pay an additional 1RW as you cast this spell.)\nIf this spell’s kicker cost was paid, create an XV-8 Crisis Suit.\nPut two +1/+1 counters on a Battlesuit you control. When you do, that creature deals damage equal to its power to target creature an opponent controls.",
+      "color": "R",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "025",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:019",
+      "name": "Thought Monitor",
+      "mana_cost": "{6}{U}",
+      "mana_value": 7,
+      "type_line": "Artifact Creature — Construct",
+      "oracle_text": "Affinity for artifacts (This spell costs 1 less to cast for each artifact you control.)\nFlying\nWhen this creature enters, draw two cards.",
+      "color": "U",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "019",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false,
+      "power": "2",
+      "toughness": "2"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:043",
+      "name": "Fabrication Zone",
+      "mana_cost": "{1}{U}{R}",
+      "mana_value": 3,
+      "type_line": "Artifact",
+      "oracle_text": "When this artifact enters, and at the beginning of your upkeep, choose one—\n• Create a Gun Drone.\n• Create a Treasure token.\n4UR: Create a token that’s a copy of this artifact.",
+      "color": "UR",
+      "color_identity": "UR",
+      "set_code": "TAU",
+      "collector_number": "043",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "mythic rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:007",
+      "name": "Heavy Duties",
+      "mana_cost": "{1}{W}",
+      "mana_value": 2,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever an opponent draws a card other than the first card they draw during their turn, that player may pay 1. If they don’t, you create a Treasure token.",
+      "color": "W",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "007",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:061",
+      "name": "Sol Ring",
+      "mana_cost": "{1}",
+      "mana_value": 1,
+      "type_line": "Artifact",
+      "oracle_text": "T: Add CC.",
+      "color": "",
+      "color_identity": "",
+      "set_code": "TAU",
+      "collector_number": "061",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:057",
+      "name": "The Dawn Blade",
+      "mana_cost": "{1}",
+      "mana_value": 1,
+      "type_line": "Legendary Artifact — Equipment",
+      "oracle_text": "Equipped creature gets +1/+1 and has trample and lifelink.\n1: Permanents your opponents control lose hexproof and indestructible until end of turn.\nEquip 2",
+      "color": "",
+      "color_identity": "",
+      "set_code": "TAU",
+      "collector_number": "057",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false,
+      "flavor_text": "A weapon of darkness for a warrior of light."
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:012",
+      "name": "Brainstorm",
+      "mana_cost": "{U}",
+      "mana_value": 1,
+      "type_line": "Instant",
+      "oracle_text": "Draw three cards, then put two cards from your hand on top of your library in any order.",
+      "color": "U",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "012",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:059",
+      "name": "Horizon Engine",
+      "mana_cost": "{4}",
+      "mana_value": 4,
+      "type_line": "Artifact",
+      "oracle_text": "T: Put a charge counter on Horizon Engine if it has fewer than three charge counters on it. Then for each charge counter on it, add U, R or W.\nURW, Sacrifice Horizon Engine: Draw a card.",
+      "color": "",
+      "color_identity": "WUR",
+      "set_code": "TAU",
+      "collector_number": "059",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:062",
+      "name": "Tau Signet",
+      "mana_cost": "{2}",
+      "mana_value": 2,
+      "type_line": "Artifact",
+      "oracle_text": "T: Add one mana of any color in your commander’s color identity.",
+      "color": "",
+      "color_identity": "",
+      "set_code": "TAU",
+      "collector_number": "062",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:004",
+      "name": "Dispatch",
+      "mana_cost": "{W}",
+      "mana_value": 1,
+      "type_line": "Instant",
+      "oracle_text": "Tap target creature.\nMetalcraft — If you control three or more artifacts, exile that creature.",
+      "color": "W",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "004",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:084",
+      "name": "T'au, Heart of the Empire",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land — Island Mountain Plains",
+      "oracle_text": "(T: Add U, R or W.)\nT’au enters tapped.\nCycling 3 (3, Discard this card: Draw a card.)",
+      "color": "",
+      "color_identity": "WUR",
+      "set_code": "TAU",
+      "collector_number": "084",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:071",
+      "name": "Mystic Monastery",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped.\nT: Add U, R or W.",
+      "color": "",
+      "color_identity": "WUR",
+      "set_code": "TAU",
+      "collector_number": "071",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:064",
+      "name": "Bork'an",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land — Island Mountain",
+      "oracle_text": "(T: Add U or R.)\nThis land enters tapped.\nCycling 2",
+      "color": "",
+      "color_identity": "UR",
+      "set_code": "TAU",
+      "collector_number": "064",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:085",
+      "name": "Vior'la",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land — Mountain Plains",
+      "oracle_text": "(T: Add R or W.)\nThis land enters tapped.\nCycling 2",
+      "color": "",
+      "color_identity": "WR",
+      "set_code": "TAU",
+      "collector_number": "085",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:066",
+      "name": "Dal'yth Prime",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land — Plains Island",
+      "oracle_text": "(T: Add W or U.)\nThis land enters tapped.\nCycling 2",
+      "color": "",
+      "color_identity": "WU",
+      "set_code": "TAU",
+      "collector_number": "066",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:029",
+      "name": "Savior Protocols",
+      "mana_cost": "{3}{R}",
+      "mana_value": 4,
+      "type_line": "Instant",
+      "oracle_text": "This spell costs 3 less to cast if you control a creature with power 4 or greater.\nChange the target of target spell or ability with a single target.",
+      "color": "R",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "029",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:065",
+      "name": "Command Tower",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land",
+      "oracle_text": "T: Add one mana of any color in your commander’s color identity.",
+      "color": "",
+      "color_identity": "WUR",
+      "set_code": "TAU",
+      "collector_number": "065",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:073",
+      "name": "Path of Ancestry",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped.\nT: Add one mana of any color in your commander’s color identity. When that mana is spent to cast a creature spell that shares a creature type with your commander, scry 1.",
+      "color": "",
+      "color_identity": "WUR",
+      "set_code": "TAU",
+      "collector_number": "073",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:075",
+      "name": "Prairie Stream",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land — Plains Island",
+      "oracle_text": "This land enters tapped unless you control two or more basic lands.",
+      "color": "",
+      "color_identity": "WU",
+      "set_code": "TAU",
+      "collector_number": "075",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:079",
+      "name": "Scorched Geyser",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land — Island Mountain",
+      "oracle_text": "This land enters tapped unless you control two or more basic lands.",
+      "color": "",
+      "color_identity": "UR",
+      "set_code": "TAU",
+      "collector_number": "079",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:076",
+      "name": "Radiant Summit",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land — Mountain Plains",
+      "oracle_text": "This land enters tapped unless you control two or more basic lands.",
+      "color": "",
+      "color_identity": "WR",
+      "set_code": "TAU",
+      "collector_number": "076",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:069",
+      "name": "Fabled Passage",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land",
+      "oracle_text": "T, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle. Then if you control four or more lands, untap that land.",
+      "color": "",
+      "color_identity": "",
+      "set_code": "TAU",
+      "collector_number": "069",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:027",
+      "name": "Hammerhead Gunship",
+      "mana_cost": "{4}{R}{R}",
+      "mana_value": 6,
+      "type_line": "Artifact Creature — Tau Vehicle",
+      "oracle_text": "Flying, first strike\nWhen this creature attacks, choose one. When it enters, if its evoke cost was paid, choose one—\n• Solid Shot — This creature deals 8 damage to target creature. This damage can’t be prevented. If that creature is dealt lethal damage this way, exile it.\n• Submunitions — This creature deals 6 damage divided evenly among two, three or six target creatures.\nEvoke 3RR\nYou may cast this spell for its evoke cost as though it had flash.",
+      "color": "R",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "027",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false,
+      "power": "3",
+      "toughness": "5"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:014",
+      "name": "Consuming Tide",
+      "mana_cost": "{2}{U}{U}",
+      "mana_value": 4,
+      "type_line": "Sorcery",
+      "oracle_text": "Each player chooses a nonland permanent they control. Return all nonland permanents not chosen this way to their owners’ hands. Then you draw a card for each opponent who has more cards in their hand than you.",
+      "color": "U",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "014",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:040",
+      "name": "Crisis Deployment",
+      "mana_cost": "{2}{R}{W}",
+      "mana_value": 4,
+      "type_line": "Instant",
+      "oracle_text": "Create an XV-8 Crisis Suit. It gets +2/+0 until end of turn. If it’s your turn, it gains haste until end of turn. Otherwise it gains lifelink until end of turn.",
+      "color": "WR",
+      "color_identity": "WR",
+      "set_code": "TAU",
+      "collector_number": "040",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:t001",
+      "name": "XV-8 Crisis Suit",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Token Creature — Tau Battlesuit Soldier",
+      "oracle_text": "Flying, first strike",
+      "color": "WR",
+      "color_identity": "WR",
+      "set_code": "TAU",
+      "collector_number": "T001",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "token",
+      "is_token": true,
+      "power": "3",
+      "toughness": "3"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:013",
+      "name": "Cerebral Download",
+      "mana_cost": "{4}{U}",
+      "mana_value": 5,
+      "type_line": "Instant",
+      "oracle_text": "Surveil X, where X is the number of artifacts you control. Then draw three cards. (To surveil X, look at the top X cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)",
+      "color": "U",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "013",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:034",
+      "name": "XV-88 Broadside",
+      "mana_cost": "{4}{R}",
+      "mana_value": 5,
+      "type_line": "Creature — Tau Battlesuit Soldier",
+      "oracle_text": "Squad 4 (As an additional cost to cast this spell, you may pay 4 any number of times. When this creature enters, create that many tokens that are copies of it.)\nFirst strike, reach\nWhen XV-88 Broadside enters it deals 4 damage to any target.",
+      "color": "R",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "034",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false,
+      "power": "4",
+      "toughness": "5"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:035",
+      "name": "XV-104 Riptide",
+      "mana_cost": "{5}{R}{R}",
+      "mana_value": 7,
+      "type_line": "Creature — Tau Battlesuit Soldier",
+      "oracle_text": "Squad 5 (As an additional cost to cast this spell, you may pay 5 any number of times. When this creature enters, create that many tokens that are copies of it.)\nMenace\n3RW: XV-104 Riptide deals 5 damage to target creature that’s attacking, blocking, or tapped. Activate this ability only once each turn.",
+      "color": "R",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "035",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false,
+      "power": "7",
+      "toughness": "7"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:058",
+      "name": "Earth Caste Builder Drone",
+      "mana_cost": "{1}",
+      "mana_value": 1,
+      "type_line": "Artifact Creature — Drone",
+      "oracle_text": "Flying\nWhen Earth Caste Builder Drone enters you may search your library for a basic land card, reveal it, then shuffle and put that card on top.\nWhen Earth Caste Builder Drone dies, create a Treasure token.",
+      "color": "",
+      "color_identity": "",
+      "set_code": "TAU",
+      "collector_number": "058",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false,
+      "power": "0",
+      "toughness": "1"
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:080",
+      "name": "Seat of the Synod",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Artifact Land",
+      "oracle_text": "T: Add U.",
+      "color": "",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "080",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:070",
+      "name": "Great Furnace",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Artifact Land",
+      "oracle_text": "T: Add R.",
+      "color": "",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "070",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:063",
+      "name": "Ancient Den",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Artifact Land",
+      "oracle_text": "T: Add W.",
+      "color": "",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "063",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:078",
+      "name": "Rustvale Bridge",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Artifact Land",
+      "oracle_text": "This land enters tapped.\nIndestructible\nT: Add R or W.",
+      "color": "",
+      "color_identity": "WR",
+      "set_code": "TAU",
+      "collector_number": "078",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:077",
+      "name": "Razortide Bridge",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Artifact Land",
+      "oracle_text": "This land enters tapped.\nIndestructible\nT: Add W or U.",
+      "color": "",
+      "color_identity": "WU",
+      "set_code": "TAU",
+      "collector_number": "077",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:081",
+      "name": "Silverbluff Bridge",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Artifact Land",
+      "oracle_text": "This land enters tapped.\nIndestructible\nT: Add U or R.",
+      "color": "",
+      "color_identity": "UR",
+      "set_code": "TAU",
+      "collector_number": "081",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:067",
+      "name": "Demolition Field",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land",
+      "oracle_text": "T: Add C.\n2, T, Sacrifice this land: Destroy target nonbasic land an opponent controls. That land’s controller may search their library for a basic land card, put it onto the battlefield, then shuffle. You may search your library for a basic land card, put it onto the battlefield, then shuffle.",
+      "color": "",
+      "color_identity": "",
+      "set_code": "TAU",
+      "collector_number": "067",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:072",
+      "name": "Mystic Sanctuary",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land — Island",
+      "oracle_text": "(T: Add U.)\nThis land enters tapped unless you control three or more other Islands.\nWhen this land enters untapped, you may put target instant or sorcery card from your graveyard on top of your library.",
+      "color": "",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "072",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:082",
+      "name": "Spire of Industry",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land",
+      "oracle_text": "T: Add C.\nT, Pay 1 life: Add one mana of any color. Activate only if you control an artifact.",
+      "color": "",
+      "color_identity": "WUR",
+      "set_code": "TAU",
+      "collector_number": "082",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false,
+      "flavor_text": "A beacon of prosperity to some, a shadow of oppression to others."
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:083",
+      "name": "Staging Ground",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land",
+      "oracle_text": "T: Add C.\n3, T: Target creature becomes prepared. (Only creatures with prepare spells can become prepared.)",
+      "color": "",
+      "color_identity": "",
+      "set_code": "TAU",
+      "collector_number": "083",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "uncommon",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:074",
+      "name": "Patient Hunting Grounds",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Legendary Land",
+      "oracle_text": "This land enters tapped.\nT: Add U, R or W.\n1W, T: Prevent all damage that would be dealt to you this turn by a source of your choice. At the beginning of the next end step, if damage was prevented this way, put a patience counter on this land.\n2RR, T, Remove two patience counters from this land: Until end of turn, whenever a creature you control deals combat damage to an opponent, it deals that much damage to each other opponent.",
+      "color": "",
+      "color_identity": "WUR",
+      "set_code": "TAU",
+      "collector_number": "074",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "mythic rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:068",
+      "name": "Envoy's Garden",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Land",
+      "oracle_text": "T: Add one mana of any color that a land an opponent controls could produce.",
+      "color": "",
+      "color_identity": "WUR",
+      "set_code": "TAU",
+      "collector_number": "068",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "rare",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:089",
+      "name": "Island",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Basic Land — Island",
+      "oracle_text": "",
+      "color": "",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "089",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "basic land",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:086",
+      "name": "Plains",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Basic Land — Plains",
+      "oracle_text": "",
+      "color": "",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "086",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "basic land",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:090",
+      "name": "Island",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Basic Land — Island",
+      "oracle_text": "",
+      "color": "",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "090",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "basic land",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:092",
+      "name": "Mountain",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Basic Land — Mountain",
+      "oracle_text": "",
+      "color": "",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "092",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "basic land",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:087",
+      "name": "Plains",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Basic Land — Plains",
+      "oracle_text": "",
+      "color": "",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "087",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "basic land",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:091",
+      "name": "Island",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Basic Land — Island",
+      "oracle_text": "",
+      "color": "",
+      "color_identity": "U",
+      "set_code": "TAU",
+      "collector_number": "091",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "basic land",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:093",
+      "name": "Mountain",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Basic Land — Mountain",
+      "oracle_text": "",
+      "color": "",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "093",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "basic land",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:094",
+      "name": "Mountain",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Basic Land — Mountain",
+      "oracle_text": "",
+      "color": "",
+      "color_identity": "R",
+      "set_code": "TAU",
+      "collector_number": "094",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "basic land",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:088",
+      "name": "Plains",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Basic Land — Plains",
+      "oracle_text": "",
+      "color": "",
+      "color_identity": "W",
+      "set_code": "TAU",
+      "collector_number": "088",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "basic land",
+      "layout": "normal",
+      "is_token": false
+    },
+    {
+      "record_id": "uk.scudmarx.tau40k:t003",
+      "name": "Treasure",
+      "mana_cost": "",
+      "mana_value": 0,
+      "type_line": "Token Artifact — Treasure",
+      "oracle_text": "T, Sacrifice this token: Add one mana of any color.",
+      "color": "",
+      "color_identity": "",
+      "set_code": "TAU",
+      "collector_number": "T003",
+      "language": "en",
+      "finishes": [
+        "nonfoil"
+      ],
+      "rarity": "common",
+      "layout": "token",
+      "is_token": true
+    }
+  ]
+}
